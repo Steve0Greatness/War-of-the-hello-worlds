@@ -1,0 +1,64 @@
+:root {
+	font-family: monospace;
+	font-size: .75rem;
+	font-weight: bold;
+	color: green;
+	background: black;
+}
+
+.command {
+	display: inline-block;
+}
+
+select,
+input,
+button {
+	all: inherit;
+	display: inline-block;
+	cursor: pointer;
+	padding: 2px;
+	border: green 2px solid;	
+}
+
+input:not([type=button]):not([type=submit]) {
+	cursor: text;
+}
+
+:any-link {
+	color: #a0f;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+	border: green 2px solid;
+	font-size: 1.15rem;
+	padding: 2px;
+}
+
+.supported {
+	border-color: yellow !important;
+	color: yellow;
+	background-color: #550;
+}
+
+summary {
+	cursor: pointer;
+	list-style: none;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding-left: 2px;
+}
+
+details[open] > summary {
+	padding-bottom: 3px;
+}
+
+details {
+	border: 2px green solid;
+	padding: 3px;
+}
