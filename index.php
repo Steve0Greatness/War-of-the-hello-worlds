@@ -23,7 +23,7 @@
 		}
 	?>
 	<form action="submit_support.php" method="post">
-		<select name="side">
+		<select name="side" id="side">
 			<?php
 				$hellos = json_decode(file_get_contents('HelloWorlds.json'));
 				foreach ($hellos as $hello=>$_) {
@@ -31,7 +31,7 @@
 				}
 			?>
 		</select>
-		<input type="submit" value="Support this side">
+		<p class="small"><input type="submit" value="Support this side"></p>
 	</form>
 	<p>Don't see your favorite way of writing "Hello World?" Maybe <a href="requests.php">request it.</a> However if you don't care and just want to see the results, you can find them on the <a href="results.php">results page</a>.</p>
 		<?php
